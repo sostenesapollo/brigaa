@@ -1,0 +1,10 @@
+[
+	{'Componente Curricular': 'ÁLGEBRA LINEAR', 'Local': 'Sala 535- Bloco 03/CT', 'Horário': '35M34'}, 
+	{'Componente Curricular': 'CÁLCULO DIFERENCIAL E INTEGRAL II', 'Local': 'Sala 555-CT', 'Horário': '24M34'}, 
+	{'Componente Curricular': 'CIRCUITOS DIGITAIS', 'Local': 'Sala 585-BL08-CT', 'Horário': '35T34'}, 
+	{'Componente Curricular': 'FÍSICA I', 'Local': 'Sala 566 - CT', 'Horário': '35M56'}, 
+	{'Componente Curricular': 'LABORATÓRIO DE CIRCUITOS DIGITAIS', 'Local': 'Lab 587-BL08-CT', 'Horário': '3T56'}, 
+	{'Componente Curricular': 'LABORATÓRIO DE FÍSICA EXPERIMENTAL I', 'Local': 'Sala 232 - DF/CCN', 'Horário': '4T34'},
+	{'Componente Curricular': 'PROGRAMAÇÃO ESTRUTURADA', 'Local': 'Lab 561a-CT', 'Horário': '24M56'},
+	{'Componente Curricular': 'TÉCNICAS DE CAD', 'Local': 'Lab 561b', 'Horário': '6T3456'}
+]

@@ -1,0 +1,830 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="background" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="/sigaa/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/15814391/navmenu.jscookmenu.HtmlJSCookMenuRenderer/JSCookMenu.js"><!--
+
+//--></script>
+<script type="text/javascript" src="/sigaa/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/15814391/navmenu.jscookmenu.HtmlJSCookMenuRenderer/MyFacesHack.js"><!--
+
+//--></script>
+<script type="text/javascript"><!--
+var myThemeOfficeBase='/sigaa/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/15814391/navmenu.jscookmenu.HtmlJSCookMenuRenderer/ThemeOffice/';
+//--></script>
+<script type="text/javascript" src="/sigaa/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/15814391/navmenu.jscookmenu.HtmlJSCookMenuRenderer/ThemeOffice/theme.js"><!--
+
+//--></script>
+<link rel="stylesheet" href="/sigaa/css/jscookmenu/ThemeOffice/theme.css" type="text/css" />
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache" />
+
+
+<title>SIGAA - Sistema Integrado de Gest&#227;o de Atividades Acad&#234;micas</title>
+<link class="component" href="/sigaa/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/basic_classes.xcss/DATB/eAF7sqpgb-jyGdIAFrMEaw__.jsf" rel="stylesheet" type="text/css" /><link class="component" href="/sigaa/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/extended_classes.xcss/DATB/eAF7sqpgb-jyGdIAFrMEaw__.jsf" media="rich-extended-skinning" rel="stylesheet" type="text/css" /><script type="text/javascript">window.RICH_FACES_EXTENDED_SKINNING_ON=true;</script><script src="/sigaa/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/skinning.js.jsf" type="text/javascript"></script><link rel="shortcut icon" href="/sigaa/img/sigaa.ico" />
+
+<script type="text/javascript" src="/shared/jsBundles/jawr_loader.js"></script>
+<script type="text/javascript">
+                JAWR.loader.style('/bundles/css/sigaa_base.css', 'all');
+        		JAWR.loader.style('/css/ufrn_print.css', 'print');
+
+        		JAWR.loader.script('/bundles/js/sigaa_base.js');
+</script>
+<link rel="stylesheet" type="text/css" media="all" href="/sigaa/cssBundles/gzip_780919309/bundles/css/sigaa.css" />
+
+
+
+
+<link href="/sigaa/css/nti-utils.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/sigaa/javascript/nti-utils.js"></script>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		initNtiUtils();
+	});
+</script>
+
+
+	
+
+
+
+<script type="text/javascript">
+			var mensagem;
+			var initMensagem = function() {
+				mensagem = new Mensagem();
+			}
+			YAHOO.util.Event.addListener(window,'load', initMensagem);
+		</script>
+<!-- Fim dos imports para abrir chamado -->
+</head>
+
+<body>
+
+
+
+
+
+	<div id="container">
+	<div id="cabecalho">
+	<div id="info-sistema">
+	<h1><span>UFPI - SIGAA -</span></h1>
+	<h3>Sistema Integrado de Gest&#227;o de Atividades Acad&#234;micas</h3>
+
+	
+		<div id="tempoSessao"></div>
+		<span class="sair-sistema"> <a href="/sigaa/logar.do?dispatch=logOff">SAIR</a> </span>
+	</div>
+	 
+
+	<div id="painel-usuario"
+		>
+	
+		<div id="menu-usuario">
+		<ul>
+			<li class="modulos">
+				<span id="modulos"> <a href="#" id="show-modulos">
+				M&#243;dulos </a> </span>
+			</li>
+			
+				
+				<li class="caixa-postal">
+				<a href="/sigaa/abrirCaixaPostal.jsf?sistema=2"> 
+					
+					
+						
+						
+							Cx. Postal <font color="red" style="font-size:0.7em;">(3)</font>
+						
+					 
+				</a>
+				</li>
+				
+			
+			
+			<li class="chamado">
+			    
+					
+						<a href="javascript://nop/" onclick="alert('Caro aluno, em caso de d&#250;vidas em rela&#231;&#227;o ao uso do SIGAA, recorra &#224; coordena&#231;&#227;o do seu curso.\nEm caso de erro, envie uma mensagem para sistemas@ufpi.edu.br (n&#227;o esquecendo de informar seu n&#250;mero de matr&#237;cula).');">Abrir Chamado</a>
+					
+					
+				
+			</li>
+			
+			
+				 
+					<li class="menus">
+						
+							<a href="/sigaa/verPortalDiscente.do">Menu Discente</a>
+						
+						
+					</li>
+				 
+			
+			
+			
+				<li class="dados-pessoais"><a href="#"
+					onclick="window.open('/sigaa/alterar_dados.jsf','','width=670,height=430, top=100, left=100, scrollbars' )">Alterar
+				senha</a></li>
+			
+			<li class="ajuda">
+			<a href="https://docs.info.ufrn.br/doku.php?id=suporte:sigaa:visao_geral" target="_blank">
+			Ajuda </a></li>
+		</ul>
+		</div>
+
+		<div id="info-usuario">
+
+		<p class="periodo-atual"></p>
+
+		<p class="usuario">
+			<span title="SOSTENES APOLLO MEDEIROS MORENO DA SILVA">SOSTENES APOLLO M. M. DA SILVA</span>
+			
+			
+		</p>
+
+		<p class="unidade">
+			CENTRO DE TECNOLOGIA
+			 (11.00.28)
+			
+		</p>
+
+		</div>
+	
+	<div id="menu-principal"></div>
+	</div>
+	</div>
+	
+
+	<div id="conteudo">
+
+
+
+
+<script src="/sigaa/javascript/encoding.js" type="text/javascript" ></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" media="all" href="/sigaa/cssBundles/gzip_1640272741/css/portal_docente.css" />
+
+
+<script type="text/javascript">
+	JAWR.loader.script('/javascript/paineis/noticias.js');
+	JAWR.loader.script('/javascript/jquery/jquery.js');
+</script>
+
+<style>
+#cboxLoadedContent iframe {
+	background-color:#FFFFFF;
+}
+</style>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/sigaa/primefaces_resource/1.1/skins/sam/skin.css" />
+
+	
+	<div id="portal-docente">
+		
+			
+			
+			
+				
+
+
+
+
+
+<div id="menu-dropdown">
+<div class="wrapper">
+
+
+<form id="menu:form_menu_discente" name="menu:form_menu_discente" method="post" action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="menu:form_menu_discente" value="menu:form_menu_discente" />
+
+
+<input type="hidden" name="id" value="187101"/>
+<input type="hidden" name="jscook_action"/>
+
+<script type="text/javascript">var menu_form_menu_discente_j_id_jsp_1325243614_85_menu =
+[['<img src="/sigaa/img/icones/ensino_menu.gif"/>', 'Ensino', null, 'menu:form_menu_discente', null,[null, 'Avalia&#231;&#227;o Docente', null, 'menu:form_menu_discente', null,[null, 'Preencher a Avalia&#231;&#227;o Docente', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ avaliacaoInstitucional.iniciarDiscente }', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Rever a Avalia&#231;&#227;o Anterior', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ avaliacaoInstitucionalAnterior.reverAnteriorDiscente }', 'menu:form_menu_discente', null],
+[null, 'Consultar o Resultado da Avalia&#231;&#227;o', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ relatorioAvaliacaoMBean.iniciarConsultaPublica }', 'menu:form_menu_discente', null],
+[null, 'Observa&#231;&#245;es dos Docentes Sobre Minhas Turmas', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ relatorioAvaliacaoMBean.iniciarObservacoesTurmasDiscente }', 'menu:form_menu_discente', null]],
+['<img src="/sigaa/img/celular_icone.gif"/>', 'Minhas Notas', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ relatorioNotasAluno.gerarRelatorio }', 'menu:form_menu_discente', null],
+['<img src="/sigaa/img/celular_icone.gif"/>', 'Atestado de Matr&#237;cula', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ portalDiscente.atestadoMatricula }', 'menu:form_menu_discente', null],
+[null, 'Consultar Hist&#243;rico', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ portalDiscenteUFPI.historico }', 'menu:form_menu_discente', null],
+[null, 'Projeto de Ensino', null, 'menu:form_menu_discente', null,[null, 'Certificados', null, 'menu:form_menu_discente', null,[null, 'Emitir Certificado', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ listaAtividadesParticipantesEnsinoMBean.listaDiscente }', 'menu:form_menu_discente', null]]],
+[null, 'Declara&#231;&#227;o de V&#237;nculo', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ declaracaoVinculo.emitirDeclaracao}', 'menu:form_menu_discente', null],
+['<img src="/sigaa/img/graduacao/coordenador/documento.png"/>', 'Certid&#245;es', null, 'menu:form_menu_discente', null,['<img src="/sigaa/img/graduacao/coordenador/documento.png"/>', 'Carga Hor&#225;ria Cursada', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ certidoes.iniciarCertidaoCargaHoraria }', 'menu:form_menu_discente', null]],
+_cmSplit,[null, 'Matr&#237;cula On-Line', null, 'menu:form_menu_discente', null,[null, 'Realizar Matr&#237;cula', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ matriculaGraduacaoUFPI.telaInstrucoes}', 'menu:form_menu_discente', null],
+[null, 'Relat&#243;rio de Diagn&#243;stico de Matr&#237;cula', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ relatorioDiagnosticoMatriculaMBean.gerar }', 'menu:form_menu_discente', null],
+[null, 'Realizar Matr&#237;cula em Turma de F&#233;rias', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ confirmacaoMatriculaFeriasUFPIBean.iniciar}', 'menu:form_menu_discente', null],
+[null, 'Realizar Matr&#237;cula Extraordin&#225;rias', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ matriculaExtraordinaria.iniciar}', 'menu:form_menu_discente', null],
+[null, 'Ver Comprovante de Matr&#237;cula', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ matriculaGraduacaoUFPI.verComprovanteSolicitacoes}', 'menu:form_menu_discente', null],
+[null, 'Atestado de Matr&#237;cula', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ portalDiscente.atestadoMatricula }', 'menu:form_menu_discente', null],
+[null, 'Atestado de Matr&#237;cula de F&#233;rias', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ portalDiscente.atestadoMatriculaFerias }', 'menu:form_menu_discente', null],
+[null, 'Ver Orienta&#231;&#245;es de Matr&#237;cula', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ matriculaGraduacao.acompanharSolicitacoes}', 'menu:form_menu_discente', null],
+[null, 'Ver Resultado do Processamento', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ matriculaGraduacao.verComprovanteSolicitacoes}', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Meu Plano de Matr&#237;culas', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ planoMatriculaBean.gerar }', 'menu:form_menu_discente', null]],
+[null, 'Trancamento de Componente Curricular', null, 'menu:form_menu_discente', null,[null, 'Trancar', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ trancamentoMatriculaUFPI.popularSolicitacao }', 'menu:form_menu_discente', null],
+[null, 'Exibir Andamento do Trancamento', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ trancamentoMatriculaUFPI.iniciarMeusTrancamentos }', 'menu:form_menu_discente', null]],
+_cmSplit,[null, 'Trancamento de Curso', null, 'menu:form_menu_discente', null,[null, 'Iniciar Solicita&#231;&#227;o de Trancamento', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ trancamentoPrograma.iniciarTrancamentoRegular }', 'menu:form_menu_discente', null],
+[null, 'Exibir Solicita&#231;&#245;es de Trancamento', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ trancamentoPrograma.exibirMinhasSolicitacoes }', 'menu:form_menu_discente', null]],
+_cmSplit,[null, 'Consultar Curso', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ curso.popularBuscaGeral }', 'menu:form_menu_discente', null],
+[null, 'Consultar Componente Curricular', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ componenteCurricular.popularBuscaDiscente }', 'menu:form_menu_discente', null],
+[null, 'Consultar Estrutura Curricular', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ curriculo.popularBuscaGeral }', 'menu:form_menu_discente', null],
+[null, 'Unidades Acad&#234;micas', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ unidade.popularBuscaGeral }', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Consultar Calend&#225;rio Acad&#234;mico', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{calendario.iniciarBusca}', 'menu:form_menu_discente', null]],
+['<img src="/sigaa/img/graduacao/coordenador/ativ_acam_especifica.png"/>', 'Atividades', null, 'menu:form_menu_discente', null,[null, 'Atividades Complementares', null, 'menu:form_menu_discente', null,[null, 'Solicitar', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{solicitacaoAtividadeMBean.entrarSolicitacaoDiscente}', 'menu:form_menu_discente', null],
+[null, 'Listar/Alterar', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{solicitacaoAtividadeMBean.consultarSolicitacoesDiscente}', 'menu:form_menu_discente', null],
+[null, 'Atividades Implantadas no Hist&#243;rico', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{solicitacaoAtividadeMBean.entrarAtividadesComplementaresHistoricoDiscente}', 'menu:form_menu_discente', null]]],
+['<img src="/sigaa/img/icones/pesquisa_menu.gif"/>', 'Pesquisa', null, 'menu:form_menu_discente', null,[null, 'Plano de Trabalho', null, 'menu:form_menu_discente', null,[null, 'Meus Planos de Trabalho', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{assinarTermoCompromisso.iniciar}', 'menu:form_menu_discente', null]],
+[null, 'Relat&#243;rios de Inicia&#231;&#227;o Cient&#237;fica', null, 'menu:form_menu_discente', null,[null, 'Relat&#243;rios Parciais', null, 'menu:form_menu_discente', null,[null, 'Enviar', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:L]#{menuDiscente.redirecionar};/pesquisa/relatorioBolsaParcial.do?dispatch=listarPlanos', 'menu:form_menu_discente', null],
+[null, 'Consultar', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:L]#{menuDiscente.redirecionar};/pesquisa/relatorioBolsaParcial.do?dispatch=listarRelatorios', 'menu:form_menu_discente', null]],
+[null, 'Relat&#243;rios Finais', null, 'menu:form_menu_discente', null,[null, 'Enviar', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:L]#{menuDiscente.redirecionar};/pesquisa/relatorioBolsaFinal.do?dispatch=listarPlanos', 'menu:form_menu_discente', null],
+[null, 'Consultar', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:L]#{menuDiscente.redirecionar};/pesquisa/relatorioBolsaFinal.do?dispatch=listarRelatorios', 'menu:form_menu_discente', null]]],
+[null, 'Congresso de Inicia&#231;&#227;o Cient&#237;fica', null, 'menu:form_menu_discente', null,[null, 'Submeter resumo', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:L]#{menuDiscente.redirecionar};/pesquisa/resumoCongresso.do?dispatch=popularInicioEnvio', 'menu:form_menu_discente', null],
+[null, 'Meus resumos', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:L]#{menuDiscente.redirecionar};/pesquisa/resumoCongresso.do?dispatch=listarResumosAutor', 'menu:form_menu_discente', null]]],
+['<img src="/sigaa/img/icones/extensao_menu.gif"/>', 'Extens&#227;o', null, 'menu:form_menu_discente', null,[null, 'A&#231;&#245;es de Extens&#227;o', null, 'menu:form_menu_discente', null,[null, 'Listar Minhas A&#231;&#245;es', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{atividadeExtensao.listarMinhasAtividades}', 'menu:form_menu_discente', null],
+[null, 'Inscri&#231;&#245;es On-line', null, 'menu:form_menu_discente', null,,
+[null, 'Inscrever em A&#231;&#245;es de Extens&#227;o', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{inscricaoParticipanteAtividadeMBean.iniciaInscricaoCursosEEventosAbertos}', 'menu:form_menu_discente', null],
+[null, 'Inscrever em Equipe Organizadora', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{inscricaoMembroEmACEMBean.iniciarInscricaoMembroEmACE}', 'menu:form_menu_discente', null]],
+_cmSplit,[null, 'Submeter proposta', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{atividadeExtensao.listarCadastrosEmAndamento}', 'menu:form_menu_discente', null],
+[null, 'Cancelar A&#231;&#227;o', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{atividadeExtensao.listarAtividadesCoordeno}', 'menu:form_menu_discente', null],
+[null, 'Consultar A&#231;&#245;es', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{atividadeExtensao.preLocalizar}', 'menu:form_menu_discente', null]],
+[null, 'Minhas A&#231;&#245;es como Membro da Equipe', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ atividadeExtensao.carregarAcoesDiscenteLogado }', 'menu:form_menu_discente', null],
+[null, 'Visualizar Resultados das inscri&#231;&#245;es', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{selecaoDiscenteExtensao.iniciarVisualizarResultados}', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Oferta de Atividade Curricular de Extens&#227;o', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{relatoriosAtividades.iniciarRelatorioAtividadesAtivas}', 'menu:form_menu_discente', null],
+[null, 'Certificados e Declara&#231;&#245;es', null, 'menu:form_menu_discente', null,[null, 'Como Participante ou Membro da Equipe', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{documentosAutenticadosExtensao.participacoesDiscenteUsuarioLogado}', 'menu:form_menu_discente', null]]],
+['<img src="/sigaa/img/icones/monitoria_menu.gif"/>', 'Monitoria', null, 'menu:form_menu_discente', null,[null, 'Consultar Editais dos Departamentos', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{buscaEditalMonitoriaDepartamento.iniciar}', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Meus Projetos de Monitoria', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:L]#{menuDiscente.redirecionar};/ufpi/monitoria/discente/meus_projetos.jsf', 'menu:form_menu_discente', null],
+[null, 'Meus Relat&#243;rios', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ relatorioMonitorUFPI.listarRelatoriosDiscente}', 'menu:form_menu_discente', null],
+[null, 'Meus Certificados', null, 'menu:form_menu_discente', null,[null, 'Certificados de Projetos', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{documentosAutenticadosMonitoriaUFPI.participacoesDiscenteUsuarioLogado}', 'menu:form_menu_discente', null],
+[null, 'Certificado de Inicia&#231;&#227;o &#224; Doc&#234;ncia', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{emissaoCertificadoSid.iniciarEmissaoCertificadoDiscente}', 'menu:form_menu_discente', null]],
+[null, 'Atividades do M&#234;s / Freq&#252;&#234;ncia', null, 'menu:form_menu_discente', null,[null, 'Cadastrar', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:L]#{menuDiscente.redirecionar};/ufpi/monitoria/discente/meus_projetos.jsf', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Consultar', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{atividadeMonitor.listarAtividades}', 'menu:form_menu_discente', null]],
+[null, 'Inscrever-se em Sele&#231;&#227;o de Monitoria', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{discenteMonitoriaUFPI.buscarOportunidades}', 'menu:form_menu_discente', null],
+[null, 'Visualizar Resultado da Sele&#231;&#227;o', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{buscaEditalMonitoriaDepartamento.iniciar}', 'menu:form_menu_discente', null],
+[null, 'Resultados Publicados', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{buscaEditalMonitoriaDepartamento.iniciarResultado}', 'menu:form_menu_discente', null]],
+['<img src="/sigaa/img/icones/biblioteca_menu.gif"/>', 'Biblioteca', null, 'menu:form_menu_discente', null,_cmSplit,[null, 'Pesquisar Material no Acervo', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ pesquisaInternaBibliotecaMBean.iniciarBusca }', 'menu:form_menu_discente', null],
+[null, 'Pesquisar Artigo no Acervo', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ pesquisaInternaArtigosBibliotecaMBean.iniciarBuscaArtigo }', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Empr&#233;stimos', null, 'menu:form_menu_discente', null,[null, 'Renovar Meus Empr&#233;stimos', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{meusEmprestimosBibliotecaMBean.iniciarVisualizarEmprestimosRenovaveis}', 'menu:form_menu_discente', null],
+[null, 'Meu Hist&#243;rico de Empr&#233;stimos', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{emiteHistoricoEmprestimosMBean.iniciaUsuarioLogado}', 'menu:form_menu_discente', null]],
+_cmSplit,[null, 'Reservas de Materiais', null, 'menu:form_menu_discente', null,[null, 'Visualizar Minhas Reservas', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{visualizarReservasMaterialBibliotecaMBean.iniciaVisualizacaoMinhasReservas}', 'menu:form_menu_discente', null],
+[null, 'Solicitar Nova Reserva ', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{solicitarReservaMaterialBibliotecaMBean.iniciarReservaPeloUsuario}', 'menu:form_menu_discente', null]],
+[null, 'Servi&#231;os ao Usu&#225;rio', null, 'menu:form_menu_discente', null,[null, 'Agendamento de Orienta&#231;&#227;o', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{solicitacaoOrientacaoMBean.verMinhasSolicitacoes}', 'menu:form_menu_discente', null],
+[null, 'Solicitar Ficha Catalogr&#225;fica', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ solicitacaoServicoDocumentoMBean.verMinhasSolicitacoes }', 'menu:form_menu_discente', null]],
+_cmSplit,['<img src="/sigaa/img/biblioteca/novo_usuario.gif"/>', 'Cadastrar para Utilizar os Servi&#231;os da Biblioteca', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{cadastroUsuarioBibliotecaMBean.iniciarAutoCadastroNormasBiblioteca}', 'menu:form_menu_discente', null],
+[null, 'Verificar meus V&#237;nculos no Sistema ', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{verificaVinculosUsuarioBibliotecaMBean.iniciarVerificacaoMeusVinculos}', 'menu:form_menu_discente', null]],
+['<img src="/sigaa/img/estagio/estagio_menu.png"/>', 'Est&#225;gio', null, 'menu:form_menu_discente', null,[null, 'Gerenciar Est&#225;gios', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{buscaEstagioMBean.iniciar}', 'menu:form_menu_discente', null]],
+['<img src="/sigaa/img/icones/amb_virt.png"/>', 'Ambientes Virtuais', null, 'menu:form_menu_discente', null,[null, 'Comunidades Virtuais', null, 'menu:form_menu_discente', null,[null, 'Buscar Comunidades Virtuais', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:L]#{ buscarComunidadeVirtualMBean.criar };0', 'menu:form_menu_discente', null],
+[null, 'Minhas Comunidades', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ buscarComunidadeVirtualMBean.exibirTodasComunidadesDocente }', 'menu:form_menu_discente', null]]],
+['<img src="/sigaa/img/menu/outros.png"/>', 'Outros', null, 'menu:form_menu_discente', null,[null, 'Ouvidoria', null, 'menu:form_menu_discente', null,[null, 'Entrar em Contato', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ manifestacaoDiscente.preCadastrar }', 'menu:form_menu_discente', null],
+[null, 'Acompanhar Manifesta&#231;&#245;es', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ analiseManifestacaoDiscente.listarManifestacoes }', 'menu:form_menu_discente', null]],
+[null, 'Avisar Falta do Professor', 'menu_form_menu_discente_j_id_jsp_1325243614_85_menu:A]#{ avisoFalta.iniciar }', 'menu:form_menu_discente', null]]];</script><div id="menu_form_menu_discente_j_id_jsp_1325243614_85_menu"></div>
+<script type="text/javascript">	if(window.cmDraw!=undefined) { cmDraw ('menu_form_menu_discente_j_id_jsp_1325243614_85_menu', menu_form_menu_discente_j_id_jsp_1325243614_85_menu, 'hbr', cmThemeOffice, 'ThemeOffice');}</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id2" />
+</form>
+
+</div>
+</div>
+			
+			
+			
+		
+		
+		<div id="perfil-docente">
+			<div class="pessoal-docente">
+				<div class="foto">
+					
+						<img src="/sigaa/verFoto?idArquivo=2957613&key=d368a885275c6d00bd3babcd9b1483ae" style="width: 100px; height: 125px"/>
+					
+					
+				</div>
+				<ul>
+					<li>
+						<a	href="/sigaa/abrirCaixaPostal.jsf?sistema=2" >
+							Mensagens
+						</a>
+					</li>
+					<li>
+						<a class="perfil" href="perfil.jsf">
+							Atualizar Foto e Perfil
+						</a>
+					</li>
+					<li>
+						
+<form id="j_id_jsp_1325243614_210" name="j_id_jsp_1325243614_210" method="post" action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id_jsp_1325243614_210" value="j_id_jsp_1325243614_210" />
+
+<script type="text/javascript" language="Javascript">function dpf(f) {var adp = f.adp;if (adp != null) {for (var i = 0;i < adp.length;i++) {f.removeChild(adp[i]);}}};function apf(f, pvp) {var adp = new Array();f.adp = adp;var i = 0;for (k in pvp) {var p = document.createElement("input");p.type = "hidden";p.name = k;p.value = pvp[k];f.appendChild(p);adp[i++] = p;}};function jsfcljs(f, pvp, t) {apf(f, pvp);var ft = f.target;if (t) {f.target = t;}f.submit();f.target = ft;dpf(f);};</script>
+<a id="j_id_jsp_1325243614_210:meusDadosPessoais" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_210'),{'j_id_jsp_1325243614_210:meusDadosPessoais':'j_id_jsp_1325243614_210:meusDadosPessoais'},'');}return false">Meus Dados Pessoais</a><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id2" />
+</form>
+					</li>
+				</ul>
+				<div class="clear"> </div>
+			</div>
+			<p class="info-docente">
+			
+				<span class="nome"> <small><b>SOSTENES APOLLO MEDEIROS MORENO DA SILVA</b></small> </span>
+
+				
+					undefined
+				
+			</p>
+			
+<form id="form_links" name="form_links" method="post" action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="form_links" value="form_links" />
+
+			<div id="agenda-docente" style="text-align: center">
+				 
+			
+				<input id="form_links:avaliacaoInstitucional" type="image" src="/sigaa/img/avaliacao.jpg" name="form_links:avaliacaoInstitucional" />
+				 
+			</div>
+			<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id2" />
+</form> 
+			
+			<br>
+			
+			
+			
+				
+							
+			
+				
+				
+					<p style="text-align: center; font-size: x-small">
+					<a href="/sigaa/public/downloads/Calendario_Academico_UFPI_20151.pdf" target="_blank">
+					Calend&#225;rio Acad&#234;mico de Gradua&#231;&#227;o
+					</a>
+					</p>				
+				
+			
+
+			
+			<div id="agenda-docente">
+				<h4> Dados Institucionais </h4>
+				<table>
+					<tr>
+						<td> Matr&#237;cula: </td>
+						<td> 20199051400 </td>
+					</tr>
+					
+					<tr>
+						<td> Curso: </td>
+						<td> CT - ENGENHARIA EL&#201;TRICA - Presencial - Teresina  </td>
+					</tr>
+					<tr>
+						<td> Turno: </td>
+						<td> Matutino, Vespertino e Noturno (MTN)</td>
+					</tr>
+					
+					<tr>
+						<td> N&#237;vel: </td>
+						<td> GRADUA&#199;&#195;O </td>
+					</tr>
+					<tr>
+						<td> Status: </td>
+						<td> ATIVO </td>
+					</tr>
+					<tr>
+						<td> E-Mail: </td>
+						<td>
+							sostenesapollo25@gm...
+						</td>
+					</tr>
+					<tr>
+						<td> Entrada: </td>
+						<td> 2019.2</td>
+					</tr>
+					
+					
+					
+					
+					
+					
+					
+					
+						<tr>
+							<td colspan="2">&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align: center; font-style: italic">&#205;ndices Acad&#234;micos</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<table width="100%">
+									<tr>
+										
+											
+												</tr>
+												<tr>
+											
+											<td><acronym title="&#205;ndice de Rendimento Acad&#234;mico">IRA:</acronym></td>
+											<td align="right"><div style="margin-right:15px;">8.475</div></td>
+										
+									</tr>
+									<tr>	
+										
+										<td colspan="4" align="center">
+<form id="j_id_jsp_1325243614_214" name="j_id_jsp_1325243614_214" method="post" action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id_jsp_1325243614_214" value="j_id_jsp_1325243614_214" />
+<a id="j_id_jsp_1325243614_214:detalharIndiceAcademico" href="#" style="font-size:9px; margin-right:12px;" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_214'),{'j_id_jsp_1325243614_214:detalharIndiceAcademico':'j_id_jsp_1325243614_214:detalharIndiceAcademico'},'');}return false">Detalhar</a><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id2" />
+</form></td>
+										
+									</tr>
+								</table>
+							</td>
+						</tr>
+						
+					
+					
+						 
+				</table>
+
+
+			</div>
+		</div>
+		<div id="main-docente">
+
+			
+			
+			
+			
+			<script type="text/javascript">
+				var fcontent=new Array()
+				
+					fcontent[0] =
+							"<p class=\"noticia destaque\">"+
+								"<a href=\"#\" id=\"noticia_15239379\">Processo Seletivo Simplificado para Bolsistas da Superintend&ecirc;ncia de Comunica&ccedil;&atilde;o Social/UFPI</a>"+
+							"</p>"+
+							"<div class=\"descricao\" style=\"overflow: auto; overflow-x: hidden; overflow-y: hidden; height: 75px; width: 550px;\" >"+
+								"<a href=\"#\" style=\"font-weight: normal; text-decoration: none\" id=\"noticia_15239379\">"+
+									"<p>A Superintend&ecirc;ncia de Comunica&ccedil;&atilde;o Social da Universidade Federal do Piau&iacute; torna p&uacute;blica a abertura de inscri&ccedil;&otilde;es do Processo de Sele&ccedil;&atilde;o para participa&ccedil;&atilde;o em programa de Bolsa Estudantil de experi&ecirc;ncia extracurricular, profissional e/ou complementar, no &acirc;mbito da Superintend&ecirc;ncia de Comunica&ccedil;&atilde;o Social / SCS-UFPI, no campus da UFPI, na cidade de Teresina, conforme disposto no art. 92, da Resolu&ccedil;&atilde;o N.&ordm; 177/2012-CEPEX. As inscri&ccedil;&otilde;es podem ser feitas de 29 de agosto at&eacute; 12h do dia 04 de setembro de 2019 pelo site oficial da UFPI (www.ufpi.br) e www.ufpi.br/scs.</p>"+
+								"</a>"+
+							"</div>";
+				
+					fcontent[1] =
+							"<p class=\"noticia destaque\">"+
+								"<a href=\"#\" id=\"noticia_7643025\">Per&iacute;odo de aceita&ccedil;&atilde;o do Programa de Monitoria 2016.2</a>"+
+							"</p>"+
+							"<div class=\"descricao\" style=\"overflow: auto; overflow-x: hidden; overflow-y: hidden; height: 75px; width: 550px;\" >"+
+								"<a href=\"#\" style=\"font-weight: normal; text-decoration: none\" id=\"noticia_7643025\">"+
+									"<p>Caro aluno,</p> <p>caso tenha sido convocado no processo seletivo de monitoria 2016.2, favor, sinalizar interesse na vaga at&eacute; o dia <strong>28/09/2016</strong>, por meio do <strong>Portal Discente &gt; Monitoria &gt; Meus Projetos de Monitoria &gt; Aceitar ou Recusar Monitoria</strong>.</p> <p>&nbsp;</p> <p>Atenciosamente,</p> <p>CAAP.</p>"+
+								"</a>"+
+							"</div>";
+				
+					fcontent[2] =
+							"<p class=\"noticia destaque\">"+
+								"<a href=\"#\" id=\"noticia_5324572\">Regras das Atividades Complementares de acordo com a Norma 177/2012</a>"+
+							"</p>"+
+							"<div class=\"descricao\" style=\"overflow: auto; overflow-x: hidden; overflow-y: hidden; height: 75px; width: 550px;\" >"+
+								"<a href=\"#\" style=\"font-weight: normal; text-decoration: none\" id=\"noticia_5324572\">"+
+									"<p>Sobre as atividades complementares</p> <p>De acordo com a Norma 177/2012 de Funcionamento dos Cursos de Gradua&ccedil;&atilde;o na SE&Ccedil;&Atilde;O VI DAS ATIVIDADES COMPLEMENTARES:</p> <p>Art. 92 As Atividades Complementares de Gradua&ccedil;&atilde;o, a serem desenvolvidas durante o per&iacute;odo da<br />forma&ccedil;&atilde;o, constituem um conjunto de estrat&eacute;gias did&aacute;tico-pedag&oacute;gicas que permitem, no &acirc;mbito do curr&iacute;culo, a articula&ccedil;&atilde;o entre teoria e pr&aacute;tica e a complementa&ccedil;&atilde;o, por parte do estudante, dos saberes e habilidades necess&aacute;rias a sua forma&ccedil;&atilde;o.</p> <p>Par&aacute;grafo &uacute;nico. Podem ser consideradas atividades complementares:<br />a) Exerc&iacute;cio de monitoria<br />b) participa&ccedil;&atilde;o em PET e PIBID;<br />c) participa&ccedil;&atilde;o em pesquisa e projetos institucionais;<br />d) participa&ccedil;&atilde;o em grupos de estudo/pesquisa sob supervis&atilde;o de professores e/ou alunos dos Cursos de Mestrado e/ou Doutorado da UFPI;<br />e) atividades de apresenta&ccedil;&atilde;o e/ou organiza&ccedil;&atilde;o de eventos gerais: congressos, semin&aacute;rios, confer&ecirc;ncias, palestras, f&oacute;runs, semanas acad&ecirc;micas (participa&ccedil;&atilde;o e organiza&ccedil;&atilde;o);<br />f) experi&ecirc;ncias profissionais e/ou complementares: realiza&ccedil;&atilde;o de est&aacute;gios n&atilde;o obrigat&oacute;rios cadastrados na Pr&oacute;-Reitoria de Extens&atilde;o, realiza&ccedil;&atilde;o de est&aacute;gios em Empresa J&uacute;nior/Incubadora de Empresas, participa&ccedil;&atilde;o em projetos<br />sociais governamentais e n&atilde;o governamentais e participa&ccedil;&atilde;o em programas de bolsa da UFPI;<br />g) trabalhos publicados em revistas indexadas, jornais e anais, bem como apresenta&ccedil;&atilde;o de trabalhos em eventos cient&iacute;ficos e aprova&ccedil;&atilde;o ou premia&ccedil;&atilde;o em concursos;<br />h) atividades de extens&atilde;o: cursos &agrave; dist&acirc;ncia, estudos realizados em programas de extens&atilde;o e participa&ccedil;&atilde;o em projetos de extens&atilde;o;<br />i) viv&ecirc;ncias de gest&atilde;o: participa&ccedil;&atilde;o em &oacute;rg&atilde;os colegiados da UFPI, participa&ccedil;&atilde;o em comit&ecirc;s ou comiss&otilde;es de trabalho na UFPI, n&atilde;o relacionados a eventos, e participa&ccedil;&atilde;o em entidades estudantis da UFPI como membro de diretoria;<br />j) atividades art&iacute;stico-culturais e esportivas e produ&ccedil;&otilde;es t&eacute;cnico-cient&iacute;ficas: participa&ccedil;&atilde;o em grupos de arte, tais como, teatro, dan&ccedil;a, coral, poesia, m&uacute;sica e produ&ccedil;&atilde;o ou elabora&ccedil;&atilde;o de v&iacute;deos, softwares, exposi&ccedil;&otilde;es e programas radiof&ocirc;nicos;<br />l) disciplinas eletivas.</p> <p>Art. 93 As Coordena&ccedil;&otilde;es/chefias de Cursos de Gradua&ccedil;&atilde;o ser&atilde;o respons&aacute;veis pela implanta&ccedil;&atilde;o,<br />acompanhamento e avalia&ccedil;&atilde;o das Atividades Complementares de Gradua&ccedil;&atilde;o.<br />&sect; 1&ordm; Os Colegiados dos Cursos de Gradua&ccedil;&atilde;o da UFPI estipular&atilde;o a carga hor&aacute;ria atinente &agrave;s Atividades Complementares de Gradua&ccedil;&atilde;o, que integralizar&atilde;o seus curr&iacute;culos, at&eacute; o percentual de 10% (dez por cento) de sua carga hor&aacute;ria total, tendo como patamar m&iacute;nimo 120 (cento e vinte) horas.<br />&sect; 2&ordm; Os colegiados dos Cursos poder&atilde;o aprovar normatiza&ccedil;&otilde;es espec&iacute;ficas, incluindo estrat&eacute;gias did&aacute;ticopedag&oacute;gicas n&atilde;o previstas no par&aacute;grafo &uacute;nico, do art. 92 e estipulando carga hor&aacute;ria m&iacute;nima j&aacute; integralizada ou per&iacute;odo j&aacute; cursado para o aluno iniciar as Atividades Complementares de Gradua&ccedil;&atilde;o.</p> <p>Art. 94 O aproveitamento da carga hor&aacute;ria poder&aacute; observar os seguintes crit&eacute;rios:<br />II - participa&ccedil;&atilde;o em PET: at&eacute; 60 (sessenta) horas para o conjunto de atividade;<br />III - PIBID: at&eacute; 60 (sessenta) horas para o conjunto de atividade;<br />IV - participa&ccedil;&atilde;o em pesquisa e projetos institucionais: at&eacute; 60 (sessenta) horas cada atividade;<br />V - participa&ccedil;&atilde;o em grupos de estudo/pesquisa sob supervis&atilde;o de professores e/ou alunos dos Cursos de Mestrado e/ou Doutorado da UFPI: at&eacute; 60 (sessenta) horas cada atividade;<br />Doutorado da UFPI: at&eacute; 60 (sessenta) horas cada atividade;<br />VI &ndash; atividades de participa&ccedil;&atilde;o e/ou organiza&ccedil;&atilde;o de eventos: at&eacute; 60 (sessenta) horas para o conjunto de atividades;<br />VII &ndash; experi&ecirc;ncias profissionais e/ou complementares: at&eacute; 120 (cento e vinte) horas para o conjunto de atividades;<br />VIII &ndash; trabalhos publicados: at&eacute; 90 (noventa) horas para o conjunto de atividades;<br />IX &ndash; trabalhos de extens&atilde;o: at&eacute; 90 (noventa) horas para o conjunto de atividades;<br />X &ndash; viv&ecirc;ncias de gest&atilde;o: at&eacute; 40 (quarenta) horas para o conjunto de atividades;<br />XI &ndash; atividades art&iacute;stico-culturais, esportivas e produ&ccedil;&otilde;es t&eacute;cnico-cient&iacute;ficas: at&eacute; 90 (noventa) horas para o conjunto de atividades;<br />XII - disciplinas Eletivas: at&eacute; 60 (sessenta) horas cada atividade.</p> <p>Art. 95 O aproveitamento das atividades complementares poder&aacute; estabelecer as seguintes exig&ecirc;ncias:<br />I &ndash; Atividades de inicia&ccedil;&atilde;o &agrave; doc&ecirc;ncia e &agrave; pesquisa: relat&oacute;rio do professor orientador e/ou declara&ccedil;&otilde;es dos &oacute;rg&atilde;os/unidades competentes;<br />II &ndash; Atividades de participa&ccedil;&atilde;o e/ou organiza&ccedil;&atilde;o de eventos: certificado de participa&ccedil;&atilde;o, apresenta&ccedil;&atilde;o de relat&oacute;rios e declara&ccedil;&otilde;es dos &oacute;rg&atilde;os/unidades competentes;<br />III &ndash; Experi&ecirc;ncias profissionais competentes: Termo de Compromisso da Pr&oacute;-Reitoria de Extens&atilde;o,<br />atestados de participa&ccedil;&atilde;o e apresenta&ccedil;&atilde;o de relat&oacute;rios t&eacute;cnicos;<br />IV &ndash; Publica&ccedil;&otilde;es: c&oacute;pias dos artigos publicados e outros documentos comprobat&oacute;rios;<br />V &ndash; Atividades de extens&atilde;o: atestados ou certificados de participa&ccedil;&atilde;o, e apresenta&ccedil;&atilde;o de relat&oacute;rios e projetos registrados na Pr&oacute;-Reitoria de Extens&atilde;o;<br />VI &ndash; Viv&ecirc;ncias de gest&atilde;o: atas de reuni&otilde;es das quais o aluno participou, declara&ccedil;&atilde;o do &oacute;rg&atilde;o/unidade competente, outros atestados de participa&ccedil;&atilde;o e apresenta&ccedil;&atilde;o de relat&oacute;rios<br />VII &ndash; Atividades art&iacute;stico-culturais e esportistas e produ&ccedil;&otilde;es t&eacute;cnicas-cient&iacute;ficas: atestados de participa&ccedil;&atilde;o, apresenta&ccedil;&atilde;o de relat&oacute;rios e trabalhos produzidos;<br />VIII- Disciplinas Eletivas: Hist&oacute;rico escolar</p> <p>Art. 96 Para a participa&ccedil;&atilde;o dos alunos nas atividades complementares, dever&atilde;o ser observados os<br />seguintes crit&eacute;rios que poder&atilde;o ser complementados pelas normatiza&ccedil;&otilde;es internas previstas no &sect; 2&ordm; do art. 93, cujas atividades devem ser:<br />I &ndash; Realizadas a partir do ingresso do aluno no curso;<br />II &ndash; Compat&iacute;veis com o Projeto Pedag&oacute;gico do Curso;<br />III &ndash; Variadas, com pelo menos 2 (duas) categorias entre os crit&eacute;rios citados no Art. 98.<br />&sect; 1&ordm; O Calend&aacute;rio Acad&ecirc;mico estipular&aacute; per&iacute;odo para registro de Atividades Complementares de<br />Gradua&ccedil;&atilde;o pelo aluno no sistema eletr&ocirc;nico de cadastro, cada per&iacute;odo letivo.<br />&sect; 2&ordm; O Calend&aacute;rio Acad&ecirc;mico estipular&aacute; per&iacute;odo para avalia&ccedil;&atilde;o das Atividades Complementares de<br />Gradua&ccedil;&atilde;o pelas Coordena&ccedil;&otilde;es/chefias de Curso, at&eacute; 60 (sessenta) dias antes do prazo para a cola&ccedil;&atilde;o de grau do aluno.<br />&sect; 3&ordm; O Coordenador/Chefe de Curso avaliar&aacute; o desempenho do aluno nas Atividades Complementares de<br />Gradua&ccedil;&atilde;o, emitindo a decis&atilde;o Deferido/Indeferido, estipulando a carga hor&aacute;ria a ser aproveitado de acordo com as normas estabelecidas para o curso, e homologar&aacute; no sistema para que a seja inclu&iacute;da no hist&oacute;rico do aluno.<br />&sect; 4&ordm; Os casos de alunos ingressos no Curso atrav&eacute;s de transfer&ecirc;ncia de outra IES e mudan&ccedil;a de curso, que j&aacute; tiverem participado de Atividades Complementares de Gradua&ccedil;&atilde;o, ser&atilde;o avaliados pelos Coordenadores/Chefes de Cursos, que poder&atilde;o computar total ou parte da carga hor&aacute;ria atribu&iacute;da pela Institui&ccedil;&atilde;o ou curso de origem, em conformidade com as disposi&ccedil;&otilde;es desta Resolu&ccedil;&atilde;o e de suas normatiza&ccedil;&otilde;es internas.<br />&sect; 5&ordm; Os alunos ingressos por de admiss&atilde;o de graduado dever&atilde;o desenvolver normalmente as Atividades<br />Complementares requeridas por seu atual curso.</p>"+
+								"</a>"+
+							"</div>";
+				
+					fcontent[3] =
+							"<p class=\"noticia destaque\">"+
+								"<a href=\"#\" id=\"noticia_5238988\">Conhe&ccedil;a o significado dos status dos alunos</a>"+
+							"</p>"+
+							"<div class=\"descricao\" style=\"overflow: auto; overflow-x: hidden; overflow-y: hidden; height: 75px; width: 550px;\" >"+
+								"<a href=\"#\" style=\"font-weight: normal; text-decoration: none\" id=\"noticia_5238988\">"+
+									"<p>Caro aluno de gradua&ccedil;&atilde;o,</p> <p>&Eacute; muito importante que voc&ecirc; conche&ccedil;a o significado dos status de aluno.</p> <p>Os seguintes status s&atilde;o usados para controle do sistema acad&ecirc;mico:</p> <p>CADASTRADO - Estado que informa o aluno ingressante que fez apenas a matr&iacute;cula institucional.</p> <p>ATIVO - Estado que informa que o aluno realizou matr&iacute;cula curricular.</p> <p>FORMANDO - Estado que informa que o aluno j&aacute; concluiu todas as atividades complementares e se encontra devidamente matriculado, no per&iacute;odo corrente, nas disciplinas obrigat&oacute;rias e/ou optativas faltantes para concluir o curso.</p> <p>GRADUANDO - Estado que informa que o aluno j&aacute; concluiu e foi aprovado em todas as disciplinas obrigat&oacute;rias, optativas e atividades complementares. O aluno s&oacute; se torna graduando quando o per&iacute;odo &eacute; encerrado.</p> <p>CONCLU&Iacute;DO - Estado em que o aluno j&aacute; colou grau, teve seus registros de ENADE ingressante/concluinte atualizados, teve todos os componentes acad&ecirc;micos integralizados e se encontra apto para solicitar o Diploma de conclus&atilde;o de curso.</p> <p>O pr&oacute;prio aluno pode consultar seu hist&oacute;rico via:</p> <p>Portal do Aluno -&gt; Ensino -&gt; Consultar Hist&oacute;rico</p> <p>Confirme seu status e na sess&atilde;o de \"Componentes Curriculares\" veja a carga hor&aacute;ria pendente para obrigat&oacute;rias, optivos e ativiadedes complementares.</p> <p>Obs: alunos em mobilidade tem seu status \"Ativo\" mas devem confirmar que apare&ccedil;a a observa&ccedil;&atilde;o da mobilidade registrada em seu hist&oacute;rico</p> <p>Demais detalhes na Norma de funcionamento dos Cursos de Gradua&ccedil;&atilde;o:</p> <p><span style=\"font-size: xx-small;\">Norrma 177/2012 -&nbsp;<a title=\"Norma de Gradua&ccedil;&atilde;o\" href=\"http://www.ufpi.br/arquivos/File/normas%20da%20graduacao%20APROVADO%20CEPEX%20(2).pdf\">http://www.ufpi.br/arquivos/File/normas%20da%20graduacao%20APROVADO%20CEPEX%20(2).pdf</a></span></p>"+
+								"</a>"+
+							"</div>";
+				
+					fcontent[4] =
+							"<p class=\"noticia destaque\">"+
+								"<a href=\"#\" id=\"noticia_407770\">Lan&ccedil;amento de Atividades/Frequ&ecirc;ncia de Monitoria</a>"+
+							"</p>"+
+							"<div class=\"descricao\" style=\"overflow: auto; overflow-x: hidden; overflow-y: hidden; height: 75px; width: 550px;\" >"+
+								"<a href=\"#\" style=\"font-weight: normal; text-decoration: none\" id=\"noticia_407770\">"+
+									"O SIGAA possui uma funcionalidade espec&#237;fica para o lan&#231;amento de frequ&#234;ncia relativa a Monitoria. O discente que perten&#231;a a um projeto de monitoria dever&#225; cadastrar todo m&#234;s a sua frequ&#234;ncia de atividades. Para isso, o monitor dever&#225;: Entrar no SIGAA &#8594; Portal do Discente &#8594; Monitoria &#8594; Atividades do M&#234;s/Freq&#252;&#234;ncia &#8594; Cadastrar. Em anexo, um pequeno Manual de como o aluno deve proceder.  O cadastro e homologa&#231;&#227;o do relat&#243;rio de atividades mensais devem ser realizados at&#233; o quinto dia &#250;til do m&#234;s subsequente."+
+								"</a>"+
+							"</div>";
+				
+			</script>
+			<div id="noticias-portal">
+				
+				<script>
+									
+					var portal = "ea5d1f112744a7983f19e75390eb3b46";
+					var sistema = "/sigaa";
+				</script>
+				
+				<script type="text/javascript" src="/shared/javascript/scroller-portal.js"></script>
+				
+				
+			</div>
+
+	
+		
+			
+			
+								
+			
+			
+			<div id="turmas-portal" class="simple-panel">
+				<h4> Turmas do Semestre   </h4>
+				
+				
+				
+				
+					
+					<p class="vazio"> Nenhuma turma neste semestre </p>
+					
+					
+				
+
+				
+
+				
+				<span class="mais">
+					<a href="/sigaa/portais/discente/turmas.jsf">Ver turmas anteriores</a>
+				</span>
+				
+				
+			</div>
+
+			
+			
+			
+			
+			<div id="participantes" class="simple-panel">
+				<h4> Comunidades Virtuais que participa atualmente </h4>
+				
+				
+			
+			
+				
+			</div>
+			
+			
+
+
+	<div id="forum-portal" class="simple-panel">
+		
+		
+		
+
+			
+				<h4>F&#211;RUM DO CURSO DE ENGENHARIA ELETRICA </h4>
+			
+			
+
+		
+<form id="j_id_jsp_1325243614_251" name="j_id_jsp_1325243614_251" method="post" action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id_jsp_1325243614_251" value="j_id_jsp_1325243614_251" />
+
+		<div class="descricaoOperacao">
+			Caro Aluno, este f&#243;rum &#233; destinado para discuss&#245;es relacionadas ao seu curso. Todos os alunos 
+			do curso e a coordena&#231;&#227;o tem acesso a ele.
+		</div>
+		
+		
+		<center><a id="j_id_jsp_1325243614_251:novoTopicoForum" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_251'),{'j_id_jsp_1325243614_251:novoTopicoForum':'j_id_jsp_1325243614_251:novoTopicoForum'},'');}return false">Cadastrar novo t&oacute;pico para este f&oacute;rum</a>
+		</center><br/>
+		
+		
+
+		
+
+			<table class="listagem">
+				<thead>
+					<tr>
+						<th>T&#237;tulo</th>
+						<th>Autor</th>
+						<th style="text-align: center">Respostas</th>
+						<th style="text-align: center">Data</th>
+						<th></th>
+						</th>
+						<th></th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					
+						<tr class="linhaPar" >
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_251:mostrarForumMensagemCurso" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_251'),{'j_id_jsp_1325243614_251:mostrarForumMensagemCurso':'j_id_jsp_1325243614_251:mostrarForumMensagemCurso','idForumMensagem':'30952739','id':'16335158'},'');}return false">[ENADE 2019] - QUESTION&Aacute;RIO DO ESTUDANTE</a>
+							</td>
+
+							<!-- <td>[ENADE 2019] - QUESTION&#193;RIO DO ESTUDANTE</td> -->
+							<td><acronym title="FABIO ROCHA BARBOSA"> fabiorb </acronym></td>
+							<td style="text-align: center">0</td>
+							<td style="text-align: center">
+								
+									21/11/2019 10:06:54
+								 
+								
+							</td>
+						</tr>
+					
+						<tr class="linhaImpar" >
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_1" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_251'),{'j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_1':'j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_1','idForumMensagem':'30914335','id':'16335158'},'');}return false">LEMBRETE: REUNI&Atilde;O ENADE 2019</a>
+							</td>
+
+							<!-- <td>LEMBRETE: REUNI&#195;O ENADE 2019</td> -->
+							<td><acronym title="FABIO ROCHA BARBOSA"> fabiorb </acronym></td>
+							<td style="text-align: center">0</td>
+							<td style="text-align: center">
+								
+									18/11/2019 08:32:20
+								 
+								
+							</td>
+						</tr>
+					
+						<tr class="linhaPar" >
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_2" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_251'),{'j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_2':'j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_2','idForumMensagem':'30878504','id':'16335158'},'');}return false">LEMBRETE: REUNI&Atilde;O ENADE 2019</a>
+							</td>
+
+							<!-- <td>LEMBRETE: REUNI&#195;O ENADE 2019</td> -->
+							<td><acronym title="FABIO ROCHA BARBOSA"> fabiorb </acronym></td>
+							<td style="text-align: center">0</td>
+							<td style="text-align: center">
+								
+									13/11/2019 08:28:18
+								 
+								
+							</td>
+						</tr>
+					
+						<tr class="linhaImpar" >
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_3" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_251'),{'j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_3':'j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_3','idForumMensagem':'30822738','id':'16335158'},'');}return false">SELE&Ccedil;&Atilde;O DE DISCENTES PARA O PET</a>
+							</td>
+
+							<!-- <td>SELE&#199;&#195;O DE DISCENTES PARA O PET</td> -->
+							<td><acronym title="MIGUEL LEOCADIO DE SOUSA NETO"> miguelo_neto </acronym></td>
+							<td style="text-align: center">0</td>
+							<td style="text-align: center">
+								
+									06/11/2019 15:43:03
+								 
+								
+							</td>
+						</tr>
+					
+						<tr class="linhaPar" >
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_4" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_251'),{'j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_4':'j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_4','idForumMensagem':'30817927','id':'16335158'},'');}return false">Reuni&atilde;o sobre ENADE 2019</a>
+							</td>
+
+							<!-- <td>Reuni&#227;o sobre ENADE 2019</td> -->
+							<td><acronym title="FABIO ROCHA BARBOSA"> fabiorb </acronym></td>
+							<td style="text-align: center">0</td>
+							<td style="text-align: center">
+								
+									06/11/2019 08:43:52
+								 
+								
+							</td>
+						</tr>
+					
+						<tr class="linhaImpar" >
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_5" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_251'),{'j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_5':'j_id_jsp_1325243614_251:mostrarForumMensagemCursoj_id_5','idForumMensagem':'30760952','id':'16335158'},'');}return false">ENADE 2019 - Question&aacute;rio do Estudante</a>
+							</td>
+
+							<!-- <td>ENADE 2019 - Question&#225;rio do Estudante</td> -->
+							<td><acronym title="FABIO ROCHA BARBOSA"> fabiorb </acronym></td>
+							<td style="text-align: center">0</td>
+							<td style="text-align: center">
+								
+									01/11/2019 14:30:29
+								 
+								
+							</td>
+						</tr>
+					
+				</tbody>
+			</table>
+		
+	<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id2" />
+</form>
+	
+	
+	
+	</div> 
+			
+		</div>
+		<div class="clear"> </div>
+	</div>
+
+
+<style>
+	#avaliacao-portal th, #avaliacao-portal td{
+		text-align:left;
+	}
+</style>
+
+<script type="text/javascript">
+	PainelNoticias.init('/sigaa/portais/docente/viewNoticia.jsf');
+</script>
+
+<div class="clear"> </div>
+
+</div> 
+	<br />
+
+	
+	
+	<div style="width: 80%; text-align: center; margin: 0 auto;">
+		<a href='null'></a>
+	</div>
+	
+	
+
+	<div id="rodape">
+		<p>	SIGAA | Superintend&#234;ncia de Tecnologia da Informa&#231;&#227;o - STI/UFPI - (86) 3215-1124 | sigjb02.ufpi.br.instancia1
+		
+		 
+			 - <a onclick="javascript:versao();">vSIGAA_3.12.300</a>
+		
+		<small>12/02/2020 09:59</small>	
+		</p>
+	</div>
+
+
+</div>  
+
+<div id="painel-mensagem-envio"> </div>
+
+
+
+<!-- MYFACES JAVASCRIPT -->
+
+</body>
+
+</html>
+ 
+	<script type="text/javascript" charset="UTF-8">
+		function versao(){
+			var msg='';
+			msg+='SIGAA SIGAA_3.12.300,  publicado em: 11/02/2020 13:31\n\n';
+			msg+='Depend\u00eancias:\n';
+			msg+='Arquitetura 2.5.32\n';
+			msg+='Entidades Comuns 1.2.38\n';
+			msg+='Servicos Integrados 1.3.12\n\n';
+			msg+='Shared Resources 1.9.12\n';
+			msg+='STI/UFPI';
+			alert(msg);
+		}	
+	</script>
+
+
+<script language="javascript">
+Relogio.init(90);
+</script>

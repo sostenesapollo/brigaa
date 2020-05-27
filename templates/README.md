@@ -1,0 +1,1 @@
+![Foto exemplo](https://github.com/sostenesapollo/brigaa/blob/master/photo.PNG)

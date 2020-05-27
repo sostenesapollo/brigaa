@@ -1,0 +1,269 @@
+<table>
+<thead>
+<tr>
+<th width="50%">Componente Curricular</th>
+<th style="text-align:left">Local</th>
+<th width="15%">Horário</th>
+<th></th>
+<th colspan="2" style="width:40px;">Chat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="descricao">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtual" method="post" name="form_acessarTurmaVirtual">
+<input name="form_acessarTurmaVirtual" type="hidden" value="form_acessarTurmaVirtual"/>
+<input name="idTurma" type="hidden" value="327942"/>
+<a href="#" id="form_acessarTurmaVirtual:turmaVirtual" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_acessarTurmaVirtual'),{'form_acessarTurmaVirtual:turmaVirtual':'form_acessarTurmaVirtual:turmaVirtual'},'');}return false">ÁLGEBRA LINEAR</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td class="info" style="text-align:left">Sala 535- Bloco 03/CT</td>
+<td class="info"><center>35M34
+								
+								</center>
+</td>
+<td>
+</td>
+<td nowrap="nowrap" style="width:50px;">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_docente" method="post" name="form_docente">
+<input name="form_docente" type="hidden" value="form_docente"/>
+<img src="/sigaa/img/flag_grey.png" title="Nenhum usuário no chat. Docente Offline"/>
+									
+									
+									
+									 
+									<a href="#" id="form_docente:acessarChatTurma" onclick="var a=function(){window.open('/sigaa/entrarChat.do?idchat=327942&amp;idusuario=93146&amp;chatName=ÁLGEBRA LINEAR&amp;origem=portalDiscente', 'chat_327942', 'height=485,width=685,location=0,resizable=1');};var b=function(){if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_docente'),{'form_docente:acessarChatTurma':'form_docente:acessarChatTurma','id':'327942'},'');}return false};return (a()==false) ? false : b();"><img alt="Acessar Chat da turma" src="/sigaa/img/comments.png" title="Acessar Chat da turma - 0 usuário(s)"/></a> 
+								<input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_327942" style="display: none;"></td>
+</tr>
+<tr class="">
+<td class="descricao">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtualj_id_1" method="post" name="form_acessarTurmaVirtualj_id_1">
+<input name="form_acessarTurmaVirtualj_id_1" type="hidden" value="form_acessarTurmaVirtualj_id_1"/>
+<input name="idTurma" type="hidden" value="327939"/>
+<a href="#" id="form_acessarTurmaVirtualj_id_1:turmaVirtual" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_acessarTurmaVirtualj_id_1'),{'form_acessarTurmaVirtualj_id_1:turmaVirtual':'form_acessarTurmaVirtualj_id_1:turmaVirtual'},'');}return false">CÁLCULO DIFERENCIAL E INTEGRAL II</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td class="info" style="text-align:left">Sala 555-CT</td>
+<td class="info"><center>24M34
+								
+								</center>
+</td>
+<td>
+</td>
+<td nowrap="nowrap" style="width:50px;">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_docentej_id_1" method="post" name="form_docentej_id_1">
+<input name="form_docentej_id_1" type="hidden" value="form_docentej_id_1"/>
+<img src="/sigaa/img/flag_grey.png" title="Nenhum usuário no chat. Docente Offline"/>
+									
+									
+									
+									 
+									<a href="#" id="form_docentej_id_1:acessarChatTurma" onclick="var a=function(){window.open('/sigaa/entrarChat.do?idchat=327939&amp;idusuario=93146&amp;chatName=CÁLCULO DIFERENCIAL E INTEGRAL II&amp;origem=portalDiscente', 'chat_327939', 'height=485,width=685,location=0,resizable=1');};var b=function(){if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_docentej_id_1'),{'form_docentej_id_1:acessarChatTurma':'form_docentej_id_1:acessarChatTurma','id':'327939'},'');}return false};return (a()==false) ? false : b();"><img alt="Acessar Chat da turma" src="/sigaa/img/comments.png" title="Acessar Chat da turma - 0 usuário(s)"/></a> 
+								<input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_327939" style="display: none;"></td>
+</tr>
+<tr class="odd">
+<td class="descricao">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtualj_id_2" method="post" name="form_acessarTurmaVirtualj_id_2">
+<input name="form_acessarTurmaVirtualj_id_2" type="hidden" value="form_acessarTurmaVirtualj_id_2"/>
+<input name="idTurma" type="hidden" value="328811"/>
+<a href="#" id="form_acessarTurmaVirtualj_id_2:turmaVirtual" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_acessarTurmaVirtualj_id_2'),{'form_acessarTurmaVirtualj_id_2:turmaVirtual':'form_acessarTurmaVirtualj_id_2:turmaVirtual'},'');}return false">CIRCUITOS DIGITAIS</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td class="info" style="text-align:left">Sala 585-BL08-CT</td>
+<td class="info"><center>35T34
+								
+								</center>
+</td>
+<td>
+</td>
+<td nowrap="nowrap" style="width:50px;">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_docentej_id_2" method="post" name="form_docentej_id_2">
+<input name="form_docentej_id_2" type="hidden" value="form_docentej_id_2"/>
+<img src="/sigaa/img/flag_grey.png" title="Nenhum usuário no chat. Docente Offline"/>
+									
+									
+									
+									 
+									<a href="#" id="form_docentej_id_2:acessarChatTurma" onclick="var a=function(){window.open('/sigaa/entrarChat.do?idchat=328811&amp;idusuario=93146&amp;chatName=CIRCUITOS DIGITAIS&amp;origem=portalDiscente', 'chat_328811', 'height=485,width=685,location=0,resizable=1');};var b=function(){if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_docentej_id_2'),{'form_docentej_id_2:acessarChatTurma':'form_docentej_id_2:acessarChatTurma','id':'328811'},'');}return false};return (a()==false) ? false : b();"><img alt="Acessar Chat da turma" src="/sigaa/img/comments.png" title="Acessar Chat da turma - 0 usuário(s)"/></a> 
+								<input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_328811" style="display: none;"></td>
+</tr>
+<tr class="">
+<td class="descricao">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtualj_id_3" method="post" name="form_acessarTurmaVirtualj_id_3">
+<input name="form_acessarTurmaVirtualj_id_3" type="hidden" value="form_acessarTurmaVirtualj_id_3"/>
+<input name="idTurma" type="hidden" value="327741"/>
+<a href="#" id="form_acessarTurmaVirtualj_id_3:turmaVirtual" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_acessarTurmaVirtualj_id_3'),{'form_acessarTurmaVirtualj_id_3:turmaVirtual':'form_acessarTurmaVirtualj_id_3:turmaVirtual'},'');}return false">FÍSICA I</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td class="info" style="text-align:left">Sala 566 - CT</td>
+<td class="info"><center>35M56
+								
+								</center>
+</td>
+<td>
+</td>
+<td nowrap="nowrap" style="width:50px;">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_docentej_id_3" method="post" name="form_docentej_id_3">
+<input name="form_docentej_id_3" type="hidden" value="form_docentej_id_3"/>
+<img src="/sigaa/img/flag_grey.png" title="Nenhum usuário no chat. Docente Offline"/>
+									
+									
+									
+									 
+									<a href="#" id="form_docentej_id_3:acessarChatTurma" onclick="var a=function(){window.open('/sigaa/entrarChat.do?idchat=327741&amp;idusuario=93146&amp;chatName=FÍSICA I&amp;origem=portalDiscente', 'chat_327741', 'height=485,width=685,location=0,resizable=1');};var b=function(){if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_docentej_id_3'),{'form_docentej_id_3:acessarChatTurma':'form_docentej_id_3:acessarChatTurma','id':'327741'},'');}return false};return (a()==false) ? false : b();"><img alt="Acessar Chat da turma" src="/sigaa/img/comments.png" title="Acessar Chat da turma - 0 usuário(s)"/></a> 
+								<input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_327741" style="display: none;"></td>
+</tr>
+<tr class="odd">
+<td class="descricao">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtualj_id_4" method="post" name="form_acessarTurmaVirtualj_id_4">
+<input name="form_acessarTurmaVirtualj_id_4" type="hidden" value="form_acessarTurmaVirtualj_id_4"/>
+<input name="idTurma" type="hidden" value="328812"/>
+<a href="#" id="form_acessarTurmaVirtualj_id_4:turmaVirtual" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_acessarTurmaVirtualj_id_4'),{'form_acessarTurmaVirtualj_id_4:turmaVirtual':'form_acessarTurmaVirtualj_id_4:turmaVirtual'},'');}return false">LABORATÓRIO DE CIRCUITOS DIGITAIS</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td class="info" style="text-align:left">Lab 587-BL08-CT</td>
+<td class="info"><center>3T56
+								
+								</center>
+</td>
+<td>
+</td>
+<td nowrap="nowrap" style="width:50px;">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_docentej_id_4" method="post" name="form_docentej_id_4">
+<input name="form_docentej_id_4" type="hidden" value="form_docentej_id_4"/>
+<img src="/sigaa/img/flag_grey.png" title="Nenhum usuário no chat. Docente Offline"/>
+									
+									
+									
+									 
+									<a href="#" id="form_docentej_id_4:acessarChatTurma" onclick="var a=function(){window.open('/sigaa/entrarChat.do?idchat=328812&amp;idusuario=93146&amp;chatName=LABORATÓRIO DE CIRCUITOS DIGITAIS&amp;origem=portalDiscente', 'chat_328812', 'height=485,width=685,location=0,resizable=1');};var b=function(){if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_docentej_id_4'),{'form_docentej_id_4:acessarChatTurma':'form_docentej_id_4:acessarChatTurma','id':'328812'},'');}return false};return (a()==false) ? false : b();"><img alt="Acessar Chat da turma" src="/sigaa/img/comments.png" title="Acessar Chat da turma - 0 usuário(s)"/></a> 
+								<input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_328812" style="display: none;"></td>
+</tr>
+<tr class="">
+<td class="descricao">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtualj_id_5" method="post" name="form_acessarTurmaVirtualj_id_5">
+<input name="form_acessarTurmaVirtualj_id_5" type="hidden" value="form_acessarTurmaVirtualj_id_5"/>
+<input name="idTurma" type="hidden" value="327857"/>
+<a href="#" id="form_acessarTurmaVirtualj_id_5:turmaVirtual" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_acessarTurmaVirtualj_id_5'),{'form_acessarTurmaVirtualj_id_5:turmaVirtual':'form_acessarTurmaVirtualj_id_5:turmaVirtual'},'');}return false">LABORATÓRIO DE FÍSICA EXPERIMENTAL I</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td class="info" style="text-align:left">Sala 232 - DF/CCN</td>
+<td class="info"><center>4T34
+								
+								</center>
+</td>
+<td>
+</td>
+<td nowrap="nowrap" style="width:50px;">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_docentej_id_5" method="post" name="form_docentej_id_5">
+<input name="form_docentej_id_5" type="hidden" value="form_docentej_id_5"/>
+<img src="/sigaa/img/flag_grey.png" title="Nenhum usuário no chat. Docente Offline"/>
+									
+									
+									
+									 
+									<a href="#" id="form_docentej_id_5:acessarChatTurma" onclick="var a=function(){window.open('/sigaa/entrarChat.do?idchat=327857&amp;idusuario=93146&amp;chatName=LABORATÓRIO DE FÍSICA EXPERIMENTAL I&amp;origem=portalDiscente', 'chat_327857', 'height=485,width=685,location=0,resizable=1');};var b=function(){if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_docentej_id_5'),{'form_docentej_id_5:acessarChatTurma':'form_docentej_id_5:acessarChatTurma','id':'327857'},'');}return false};return (a()==false) ? false : b();"><img alt="Acessar Chat da turma" src="/sigaa/img/comments.png" title="Acessar Chat da turma - 0 usuário(s)"/></a> 
+								<input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_327857" style="display: none;"></td>
+</tr>
+<tr class="odd">
+<td class="descricao">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtualj_id_6" method="post" name="form_acessarTurmaVirtualj_id_6">
+<input name="form_acessarTurmaVirtualj_id_6" type="hidden" value="form_acessarTurmaVirtualj_id_6"/>
+<input name="idTurma" type="hidden" value="328352"/>
+<a href="#" id="form_acessarTurmaVirtualj_id_6:turmaVirtual" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_acessarTurmaVirtualj_id_6'),{'form_acessarTurmaVirtualj_id_6:turmaVirtual':'form_acessarTurmaVirtualj_id_6:turmaVirtual'},'');}return false">PROGRAMAÇÃO ESTRUTURADA</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td class="info" style="text-align:left">Lab 561a-CT</td>
+<td class="info"><center>24M56
+								
+								</center>
+</td>
+<td>
+</td>
+<td nowrap="nowrap" style="width:50px;">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_docentej_id_6" method="post" name="form_docentej_id_6">
+<input name="form_docentej_id_6" type="hidden" value="form_docentej_id_6"/>
+<img src="/sigaa/img/flag_grey.png" title="Nenhum usuário no chat. Docente Offline"/>
+									
+									
+									
+									 
+									<a href="#" id="form_docentej_id_6:acessarChatTurma" onclick="var a=function(){window.open('/sigaa/entrarChat.do?idchat=328352&amp;idusuario=93146&amp;chatName=PROGRAMAÇÃO ESTRUTURADA&amp;origem=portalDiscente', 'chat_328352', 'height=485,width=685,location=0,resizable=1');};var b=function(){if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_docentej_id_6'),{'form_docentej_id_6:acessarChatTurma':'form_docentej_id_6:acessarChatTurma','id':'328352'},'');}return false};return (a()==false) ? false : b();"><img alt="Acessar Chat da turma" src="/sigaa/img/comments.png" title="Acessar Chat da turma - 0 usuário(s)"/></a> 
+								<input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_328352" style="display: none;"></td>
+</tr>
+<tr class="">
+<td class="descricao">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtualj_id_7" method="post" name="form_acessarTurmaVirtualj_id_7">
+<input name="form_acessarTurmaVirtualj_id_7" type="hidden" value="form_acessarTurmaVirtualj_id_7"/>
+<input name="idTurma" type="hidden" value="323353"/>
+<a href="#" id="form_acessarTurmaVirtualj_id_7:turmaVirtual" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_acessarTurmaVirtualj_id_7'),{'form_acessarTurmaVirtualj_id_7:turmaVirtual':'form_acessarTurmaVirtualj_id_7:turmaVirtual'},'');}return false">TÉCNICAS DE CAD</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td class="info" style="text-align:left">Lab 561b</td>
+<td class="info"><center>6T3456
+								
+								</center>
+</td>
+<td>
+</td>
+<td nowrap="nowrap" style="width:50px;">
+<form action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_docentej_id_7" method="post" name="form_docentej_id_7">
+<input name="form_docentej_id_7" type="hidden" value="form_docentej_id_7"/>
+<img src="/sigaa/img/flag_grey.png" title="Nenhum usuário no chat. Docente Offline"/>
+									
+									
+									
+									 
+									<a href="#" id="form_docentej_id_7:acessarChatTurma" onclick="var a=function(){window.open('/sigaa/entrarChat.do?idchat=323353&amp;idusuario=93146&amp;chatName=TÉCNICAS DE CAD&amp;origem=portalDiscente', 'chat_323353', 'height=485,width=685,location=0,resizable=1');};var b=function(){if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('form_docentej_id_7'),{'form_docentej_id_7:acessarChatTurma':'form_docentej_id_7:acessarChatTurma','id':'323353'},'');}return false};return (a()==false) ? false : b();"><img alt="Acessar Chat da turma" src="/sigaa/img/comments.png" title="Acessar Chat da turma - 0 usuário(s)"/></a> 
+								<input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id2"/>
+</form>
+</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_323353" style="display: none;"></td>
+</tr>
+</tbody>
+</table>

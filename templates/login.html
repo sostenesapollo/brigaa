@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<link href="https://www.ufpi.br/templates/padraogoverno01/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Toastr -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+	<meta charset="UTF-8">
+	<!-- <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/sign-in/signin.css"> -->
+	<meta name="viewport" id="myViewport" content="width=device-width, initial-scale=1.0">
+	<title>SIGAA - Super International Grand Amigos Amigos</title>	   	
+</head>
+<body style="background-color: #f5f5f5;">
+	<div id="LoginDiv">
+		<div class="text-center" style="display: -ms-flexbox;display: -webkit-box;display: flex;-ms-flex-align: center;-ms-flex-pack: center;-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;padding-top: 40px;padding-bottom: 40px;">
+			<form class="form-signin" onsubmit="return log({login: $('#login').val(),senha: $('#senha').val()})">
+				<img class="mb-1 mt-5" src="https://static.wixstatic.com/media/f0105d_3526cdb5cb284e5689bee5875c349adb~mv2.png/v1/fill/w_560,h_572,al_c,q_85,usm_0.66_1.00_0.01/briga-homens.webp" alt="" width="100" height="100">            
+				<p>Entre com suas credenciais do sigaa:</p>
+				<input type="text" id="login" class="form-control" placeholder="Usuário" required autofocus>      
+				<input type="password" id="senha" class="mt-2 form-control" placeholder="Senha" required>      
+				<button class="btn mt-2 btn-lg btn-primary btn-block" type="submit" id="entrar">Entrar</button>												
+			</form>
+		</div>
+		<div class="text-center">
+			Também acha o nome desse site ridículo ?<br>
+			<u style="color: blue;cursor: pointer;" onclick="toastr.info(`Nos ajude a encontrar um nome melhor do que 'brigaa', envie um email para sostenesapollo25@gmail.com com sua sugestão`)">clique aqui</u>
+			<p class="mt-5 mb-3 text-muted">&copy; 2020 Brigaa Corporation</p>
+		</div>
+		<a href="https://github.com/sostenesapollo/brigaa" class="float bg-dark" target="_blank">
+			<i class="fa fa-github my-float"></i>			
+		</a>	  	 
+		<div style="position: fixed;bottom: 0;right:0;margin-right: 40px;margin-bottom: 10px;" class="animat">
+			<b>😲 This is Open Source. (Nos ajude)</b>
+		</div>
+	</div>
+</body>
+
+<style>
+	.animat  {
+      animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {color: red;}
+      25%  {color: yellow;}
+      50%  {color: blue;}
+      75%  {color: green;}
+      100% {color: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {color: red;}
+      25%  {color: yellow;}
+      50%  {color: blue;}
+      75%  {color: green;}
+      100% {color: red;}
+    }
+	.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+	}
+
+	.my-float{
+		margin-top:16px;
+	}
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="HomeDiv" style="display: none;">
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+			<img src="https://static.wixstatic.com/media/f0105d_3526cdb5cb284e5689bee5875c349adb~mv2.png/v1/fill/w_560,h_572,al_c,q_85,usm_0.66_1.00_0.01/briga-homens.webp" width="30" height="30" class="d-inline-block align-top" alt="">
+			Brigaa - Esse nome é o pior possível (eu sei).
+		</a>
+		<div class="form-inline my-2 my-lg-0">			
+			<button class="btn btn-danger my-2 my-sm-0" type="submit" onclick="window.location.reload()">Sair <span class="fa fa-sign-out"></span></button>
+		</div>
+	</nav>
+	<div class="card">
+
+		<div class="card-body">			
+
+			<h5><span class="fa fa-info-circle"></span> Dados do aluno</h5>
+			<div class="row">
+				<!-- First left Row -->								
+				<div class="col col-md-6">
+					<table class='table table-striped table-sm'>
+						<thead>
+							<tr>							
+							</tr>
+							<tr>							
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>									
+									<b>Nome:</b>
+								</td>
+								<td>
+									<n id="nome">1</n>	
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<b>Curso:
+								</td>
+								<td>
+									</b> <n id="curso">1</n>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<b>Entrada:
+								</td>
+								<td>
+								</b> <n id="entrada" >1</n>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<b>E-mail:
+								</td>
+								<td>
+									</b> <n id="email" >1</n>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<b>IRA:
+								</td>
+								<td>
+									   </b> <n id="ira" >1</n>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<b>Nível:
+								</td>
+								<td>
+									</b> <n id="nivel" >1</n>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<b>Status:
+								</td>
+								<td>
+									</b> <n id="status" >1</n>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<b>Turno:
+								</td>
+								<td>
+									</b> <n id="turno" >1</n>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- Second Right Row -->
+				<div class="col col-md-6 text-right">
+					<img  id="img-sigaa" alt="">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="card-body">			
+			<h5><span class="fa fa-list"></span> Disciplinas deste período</h5>
+			<div id="turmasTb">
+				<div class="text-center mb-5 mt-5">
+					<div class="spinner-border text-success" role="status">
+						<span class="sr-only">Loading...</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-body">			
+			<div class="row">
+				<div class="col col-md-6">
+					<h5><span class="fa fa-heart"></span> Disciplinas deste período (de uma forma bonita)</h5>
+				</div>
+				<div class="col col-md-6 text-right">
+					<!-- <button class="btn btn-info" onclick="screenshot()"><span class="fa fa-download"></span></button> -->
+				</div>
+			</div>
+			
+			<div id="turmasTbschedule">
+				<div class="text-center mb-5 mt-5">
+					<div class="spinner-border text-info" role="status">
+						<span class="sr-only">Loading...</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+	function screenshot() {
+		html2canvas(document.querySelector("#table-data")).then(canvas => {
+				document.body.appendChild(canvas)
+		});
+	}
+</script>
+
+
+<script>	
+	// $("#LoginDiv").hide()	
+	// $("#HomeDiv").show()
+	// fillData(testUserData)
+
+	const colors_base = [
+		{bg:'red', text:'black'},
+		{bg:'green', text:'white'},
+		{bg:'yellow', text:'white'},
+		{bg:'purple', text:'black'},
+		{bg:'gray', text:'white'},
+		{bg:'brown', text:'white'},
+		{bg:'cyan', text:'black'},		
+		{bg:'lime', text:'white'},
+		{bg:'indigo', text:'white'},
+		{bg:'coral', text:'white'},
+		{bg:'#d955d0', text:'white'},
+		{bg:'#34eb34', text:'white'},
+		{bg:'#ffc219', text:'white'},		
+		{bg:'#876812', text:'white'},
+		{bg:'#8f9c9c', text:'white'},
+		{bg:'#b07620', text:'white'},
+		{bg:'#45b9d6', text:'white'},
+		{bg:'#cf5b7e', text:'white'},
+		{bg:'#123f45', text:'white'}
+	];		
+	var pos = 1
+
+	function getRandomColorWithBg() {			
+		pos++				
+		return colors_base[pos];
+	}
+
+	
+	function fillTurmasTable(user, d) {		
+		let schedule_data = []
+		let data = []
+		for(i in d) {
+			// console.log(d[i]);
+			let nome = d[i]['Componente Curricular']
+			let h = d[i]['Horário']
+			let hora = h
+			let local = d[i]['Local']					
+
+			let cor = getRandomColorWithBg()
+			// console.log({nome,hora,local,cor});
+			data.push({nome,hora,local,cor})
+			
+			let kk = h.split(/M|T|N/)
+			let days = kk[0]
+			let horarios = kk[1]
+			let turno = null
+			
+			if(h.includes('M')) {
+				turno = 'M'
+			}
+			if(h.includes('T')) {						
+				turno = 'T'
+			}
+			if(h.includes('N')) {						
+				turno = 'N'
+			}
+			schedule_data.push({nome, days, horarios, turno, cor})
+		}
+		// console.log(schedule_data);		
+		create_schedule(schedule_data)				
+		return data
+	}
+
+	function create_schedule(data) {		
+		let table = tablebase.replace("'>","' id='table-data'>")			
+		let week_days = ['Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo']
+		let schedule = [{M:{},T:{},N:{}},{M:{},T:{},N:{}},{M:{},T:{},N:{}},{M:{},T:{},N:{}},{M:{},T:{},N:{}},{M:{},T:{},N:{}},{M:{},T:{},N:{}}]
+		let tbody = ''
+
+		//! THEAD
+		let thead = ''
+		for(i in week_days) {			
+			thead += `<th>${week_days[i]}</th>`
+		}		
+		table = table.replace('thead',`<thead><tr><td></td>${thead}</tr></thead>`)		
+
+		//! Set Schedule data
+		for(i in data) {
+			let days = data[i].days.split('')
+			let hors = data[i].horarios.split('')
+			for(j in days) {
+				// console.log(days[j]);
+				for(k in hors) {					
+					schedule[days[j]][data[i]['turno']][hors[k]] = data[i]['nome']
+				}								
+			}			
+			console.log('=-');
+		}
+
+		console.log(schedule);
+		let sab = schedule[0];
+		let dom = schedule[1];
+
+		schedule[0] = schedule[2]
+		schedule[1] = schedule[3]
+		schedule[2] = schedule[4]
+		schedule[3] = schedule[5]
+		schedule[4] = schedule[6]
+
+		schedule[5] = sab;
+		schedule[6] = dom;
+
+		let hours = {
+			M: {
+				1: "06:00h - 07:00h",
+				2: "07:00h - 08:00h",
+				3: "08:00h - 09:00h",
+				4: "09:00h - 10:00h",
+				5: "10:00h - 11:00h",
+				6: "11:00h - 12:00h"				
+			},
+			T: {
+				1: "12:00h - 13:00h",
+				2: "13:00h - 14:00h",
+				3: "14:00h - 15:00h",
+				4: "15:00h - 16:00h",
+				5: "16:00h - 17:00h",
+				6: "17:00h - 18:00h"			
+			},
+			N: {				
+				1: "18:00h - 19:00h",
+				2: "19:00h - 20:00h",
+				3: "20:00h - 21:00h",
+				4: "21:00h - 22:00h"								
+			}			
+		}
+
+		// Set Tbody data using schedule		
+		// @tt = m, t, n  (turnos)
+		let colors = {}
+		for(n in hours) {
+			let tt = n
+			for(j in hours[tt]) {
+				let tr = ``			
+				for(i in schedule) {		
+					let val = '---'
+					for(d in week_days) {		
+						if(schedule[i][tt][j]){ 
+							val = schedule[i][tt][j]
+						}			
+					}		
+
+					if(val != '---') {						
+						if(colors[val]===undefined) {							
+							let c = getRandomColorWithBg()							
+							colors[val] = {'bg':c.bg, 'text':c.text}							
+						}
+						tr += `<td style="background-color:${colors[val]['bg']};color:${colors[val]['text']}">${small(val)}</td>`
+					}else{						
+						tr += `<td>${small(val)}</td>`
+					}
+				}													
+				tbody += `<tr><th>${hours[tt][j]}</th>${tr}</tr>`
+			}				
+		}
+	
+		table = table.replace('tbody',`<tbody>${tbody}</tbody>`)		
+
+
+		$("#turmasTbschedule").html(table);
+	}
+
+	function small(v) {
+		
+		if(v.split(' ').length == 1 ) {
+			return "---"
+		} else {
+			v = v.split(' ')
+			let r = ''
+			for(i in v) {
+				if(i == 0) {					
+					r += v[i]+' '
+				} else {
+					if(i != v.length){
+						if(v[i].length <= 3) {
+							r += v[i].slice(0,3)+' '
+						}else{
+							r += v[i].slice(0,3)+'. '
+						}
+					} else {
+						r += v[i]+' '
+					}
+				}
+			}
+			return r
+		}
+	}
+
+	function fillData(us){
+		let img = us.img_src;
+		$("#img-sigaa").attr("src",img);
+		
+		$("#nome").html(us.user_data['nome'])
+		$("#entrada").html(us.user_data['Entrada'])
+		$("#email").html(us.user_data['E-Mail'])
+		$("#ira").html(us.user_data['IRA'])
+		$("#nivel").html(us.user_data['Nível'])
+		$("#status").html(us.user_data['Status'])
+		$("#turno").html(us.user_data['Turno'])
+	}
+
+	function log(user) {
+		$("#entrar").html(`<div class="spinner-border text-secondary" role="status"><span class="sr-only">Loading...</span></div>`)		
+		
+		// User Data
+		$.ajax({
+			url:"getdata",
+			method:"get",
+			data: user			
+		}).done(datas=>{
+			console.log(datas);
+			if(datas && datas.error) {
+				toastr.error("Usuário ou senha incorretos.")
+			} else {
+				$("#LoginDiv").hide()
+				$("#HomeDiv").show()
+				
+				var mvp = document.getElementById('myViewport');
+    			mvp.setAttribute('content','');
+
+				let data = datas[1]				
+
+				let username = data['user_data']['nome'].split(' ')[0].toLowerCase()
+				username = username.charAt(0).toUpperCase() + username.slice(1)
+				toastr.info("Olá novamente, "+username)
+				toastr.success("Logado com sucesso.")
+				// Fill data
+				fillData(data)				
+				// Fill turmas table
+				// console.log(datas);
+				let tb = fillTurmasTable(user, datas[0])
+				generateTableTurmas(tb)
+
+			}
+			$("#entrar").html(`Entrar`)
+			// console.log(data);
+		})
+		
+		return false
+	}	
+</script>
+
+<script>	
+	var tablebase = `
+		<table class='table table-sm'>
+			thead
+			tbody
+		</table>
+	`
+	function generateTableTurmas(tb) {	
+		let table = tablebase	
+		let tbody = ''
+		table = table.replace('thead',`<thead>
+				<tr>							
+					<th>Nome</th>
+					<th>Turno</th>
+					<th>Local</th>
+				</tr>
+			</thead>`)
+
+		for(i in tb) {
+			tbody += `<tr><td>${tb[i].nome}</td><td>${tb[i].hora}</td><td>${tb[i].local}</td></tr>`			
+		}
+		table = table.replace('tbody',`<tbody>${tbody}</tbody>`)
+		$("#turmasTb").html(table)
+	}
+</script>
+
+</html>
